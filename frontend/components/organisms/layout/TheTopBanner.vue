@@ -16,19 +16,16 @@
         </v-flex>
         <v-flex>
           <h1 class="mb-2 display-1 text-xs-center">
-            Text Annotation for Humans
+            Solve Case Text Annotation
           </h1>
           <div class="mt-4">
             <v-btn
               large
               outlined
               color="white"
-              href="https://github.com/doccano/doccano"
+              href="https://w3.ibm.com/w3publisher/solve/"
             >
-              <v-icon left>
-                mdi-github
-              </v-icon>
-              GitHub
+              Solve Docs on w3
             </v-btn>
             <v-btn
               class="blue lighten-2 ml-5"
@@ -36,7 +33,7 @@
               large
               href="/auth"
             >
-              Get Started
+              Login and Get Started
             </v-btn>
           </div>
         </v-flex>

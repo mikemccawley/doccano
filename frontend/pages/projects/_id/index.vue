@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-card-title>
-      Welcome to doccano!
+      Welcome to Solve on CSP!
     </v-card-title>
     <v-stepper
       v-model="e6"
@@ -58,13 +58,13 @@ export default {
     return {
       e6: 1,
       items: [
-        { title: 'Import a dataset', videoId: 'dA4ID1DSxCE' },
-        { title: 'Create labels for this project', videoId: '1bSML270quU' },
-        { title: 'Add members for collaborative work', videoId: 'NI09dcBz-qA' },
-        { title: 'Define a guideline for the work', videoId: 'AvvX3Xs32nA' },
-        { title: 'Annotate the dataset', videoId: 'F3XoSdyiMhA' },
-        { title: 'View statistics', videoId: 'kfRpa0mNQMY' },
-        { title: 'Export the dataset', videoId: 'Pfy_QcHEeQ4' }
+        { title: 'Put your right foot in', videoId: 'dA4ID1DSxCE' },
+        { title: 'Put your right foot out', videoId: '1bSML270quU' },
+        { title: 'Put your right foot in', videoId: 'NI09dcBz-qA' },
+        { title: 'And you shake it all about', videoId: 'AvvX3Xs32nA' },
+        { title: 'Do the Hokey Pokey', videoId: 'F3XoSdyiMhA' },
+        { title: 'And you turn yourself around', videoId: 'kfRpa0mNQMY' },
+        { title: 'That\'s what it\'s all about!', videoId: 'Pfy_QcHEeQ4' }
       ]
     }
   },

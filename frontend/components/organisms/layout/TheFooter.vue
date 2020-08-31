@@ -15,7 +15,7 @@
         white--text
         xs12
       >
-        &copy; {{ new Date().getFullYear() }} doccano
+        &copy; {{ new Date().getFullYear() }} IBM with source powered by <a href="https://github.com/doccano/doccano">doccano</a>
       </v-flex>
     </v-layout>
   </v-footer>

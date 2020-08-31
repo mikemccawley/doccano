@@ -32,17 +32,6 @@
             </h1>
             <div class="mt-4">
               <v-menu open-on-hover offset-y>
-                <template v-slot:activator="{ on }">
-                  <v-btn
-                    class="blue lighten-2"
-                    dark
-                    large
-                    v-on="on"
-                  >
-                    Try demo
-                    <v-icon>mdi-menu-down</v-icon>
-                  </v-btn>
-                </template>
                 <v-list>
                   <v-list-item
                     v-for="(item, index) in items"

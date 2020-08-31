@@ -60,7 +60,8 @@ export default {
         { icon: 'label', text: 'Labels', link: 'labels', adminOnly: true },
         { icon: 'person', text: 'Members', link: 'members', adminOnly: true },
         { icon: 'mdi-book-open-outline', text: 'Guideline', link: 'guideline', adminOnly: true },
-        { icon: 'mdi-chart-bar', text: 'Statistics', link: 'statistics', adminOnly: true }
+        { icon: 'mdi-chart-bar', text: 'Statistics', link: 'statistics', adminOnly: true },
+        { icon: 'mdi-chart-bar', text: 'Reports', link: 'reports', adminOnly: true }
       ]
     }
   },
