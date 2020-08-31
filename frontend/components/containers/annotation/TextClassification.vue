@@ -12,7 +12,7 @@
         :delete-label="removeLabel"
       />
     </v-card-title>
-    <v-card-text class="title highlight" v-text="currentDoc.text" />
+    <v-card-text class="title highlight" v-html="currentDoc.text" />
   </v-card>
 </template>
 
