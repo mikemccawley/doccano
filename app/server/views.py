@@ -1,16 +1,15 @@
+from app import settings
+from api.models import Project, RoleMapping
+from api.permissions import ProjectAdminMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic.list import ListView
+from django.views.generic import TemplateView
+from django.shortcuts import get_object_or_404
+from django.contrib.auth.views import LoginView as BaseLoginView
 import sys
 import logging
 sys.path.append('../api')
 
-from django.contrib.auth.views import LoginView as BaseLoginView
-from django.shortcuts import get_object_or_404
-from django.views.generic import TemplateView
-from django.views.generic.list import ListView
-from django.contrib.auth.mixins import LoginRequiredMixin
-
-from api.permissions import ProjectAdminMixin
-from api.models import Project, RoleMapping
-from app import settings
 
 logger = logging.getLogger(__name__)
 
@@ -61,6 +60,13 @@ class StatsView(ProjectAdminMixin, LoginRequiredMixin, TemplateView):
     template_name = 'admin.html'
     extra_context = {
         'bundle_name': 'stats'
+    }
+
+
+class ReportsView(ProjectAdminMixin, LoginRequiredMixin, TemplateView):
+    template_name = 'admin.html'
+    extra_context = {
+        'bundle_name': 'reports'
     }
 
 

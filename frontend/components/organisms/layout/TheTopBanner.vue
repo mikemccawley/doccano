@@ -1,7 +1,7 @@
 <template>
   <section>
     <v-parallax
-      src="/images/vbanner.jpg"
+      src="/images/ibm-component-banner.png"
       height="400"
       dark
     >

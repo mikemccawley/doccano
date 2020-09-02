@@ -61,7 +61,7 @@ export default {
         { icon: 'person', text: 'Members', link: 'members', adminOnly: true },
         { icon: 'mdi-book-open-outline', text: 'Guideline', link: 'guideline', adminOnly: true },
         { icon: 'mdi-chart-bar', text: 'Statistics', link: 'statistics', adminOnly: true },
-        { icon: 'mdi-chart-bar', text: 'Reports', link: 'reports', adminOnly: true }
+        { icon: 'mdi-ferris-wheel', text: 'Reports', link: 'reports', adminOnly: true }
       ]
     }
   },

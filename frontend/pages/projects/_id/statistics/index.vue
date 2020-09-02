@@ -19,6 +19,15 @@
           :chart-data="labelStats"
         />
       </v-card>
+      <v-card>
+        <v-card-actons>
+          <v-divider></v-divider>
+          <v-spacer></v-spacer>
+          <v-btn>
+            Iterate
+          </v-btn>
+        </v-card-actons>
+      </v-card>
     </v-col>
     <v-col
       cols="12"
