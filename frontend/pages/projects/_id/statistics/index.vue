@@ -21,8 +21,6 @@
       </v-card>
       <v-card>
         <v-card-actons>
-          <v-divider></v-divider>
-          <v-spacer></v-spacer>
           <v-btn>
             Iterate
           </v-btn>
