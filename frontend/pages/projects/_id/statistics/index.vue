@@ -21,6 +21,7 @@
       </v-card>
       <v-card>
         <v-card-actons>
+          <!-- // put if block here to test for project type annotation -->
           <v-btn>
             Iterate
           </v-btn>
