@@ -33,14 +33,10 @@ export default {
   },
   methods: {
     snak: async(event) => {
-      // const url = 'http://solveadmindev.rtp.raleigh.ibm.com/solverest/service/solvecsp/testget?sample=try%20it&enchaladas=delicious'
-      const url = 'http://stingray.swg.usma.ibm.com:9000/api?verbose=true'
+      const url = 'http://solveadmindev.rtp.raleigh.ibm.com/solverest/service/solvecsp/testget?sample=try%20it&enchaladas=delicious'
+      // const url = 'http://stingray.swg.usma.ibm.com:9000/api?verbose=true'
       const config = {
-        method: 'get',
-        auth: {
-          username: 'apikey-19e76917c8294b4b8a1ce457129cce2b',
-          password: 'b65ad88b956a089528a76691fc0efbc0e9d9a9b3'
-        }
+        method: 'get'
       }
       const { data } = await axios.request(url, config)
       alert(`Response from ${url}\n${JSON.stringify(data, null, 4)}`)
