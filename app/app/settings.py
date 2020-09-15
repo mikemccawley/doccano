@@ -344,5 +344,8 @@ if DEBUG:
     CORS_ORIGIN_WHITELIST = (
         'http://127.0.0.1:3000',
         'http://0.0.0.0:3000',
+        'http://stingray.swg.usma.ibm.com:3000',
+        'http://stingray.local:3000',
+        'http://stingray:3000',
         'http://localhost:3000'
     )

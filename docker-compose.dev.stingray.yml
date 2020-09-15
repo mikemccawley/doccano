@@ -1,12 +1,11 @@
 #
-# vanilla docker-compose for local development
-# This is part of the public main branch on @doccano/doccano
+# docker-compose for local development on stingray.swg.usma.ibm.com
 #
+# mmccawley@us.ibm.com  2020-09-15
 # Use the pattern of docker networking in the .prod.yml versions
 # for server/vm deploys.  This is intended for
-# local development only.
-#
-# Don't use this file as-is.  Instead
+# local development only on Mike McCawley's MBP with the adjustments
+# for working-from-home networking.
 #
 # Modify this, and two files for deploy on local machines with your
 # hostname so that CORS issues with the backend are resolved.
@@ -21,9 +20,10 @@ services:
       - venv:/src/venv
     command: ["/src/app/tools/dev-django.sh", "0.0.0.0:8000"]
     environment:
+      HOSTNAME: "stingray.swg.usma.ibm.com"
       ADMIN_USERNAME: "admin"
-      ADMIN_PASSWORD: "password"
-      ADMIN_EMAIL: "admin@domain.com"
+      ADMIN_PASSWORD: "notreally" #be nice if I had variable substitution in yaml files.
+      ADMIN_EMAIL: "mmccawley@us.ibm.com"
       DATABASE_URL: "postgres://doccano:doccano@postgres:5432/doccano?sslmode=disable"
       ALLOW_SIGNUP: "False"
       DEBUG: "True"

@@ -1,6 +1,10 @@
+#
+# vanilla docker-compose that comes with the public main branch on @doccano/doccano
+#
+# use a modified copy of this for your deployments
+#
 version: "3.7"
 services:
-
   backend:
     build: ./app
     command: ["/app/tools/run.sh"]

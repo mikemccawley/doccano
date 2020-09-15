@@ -33,7 +33,8 @@ export default {
   },
   methods: {
     snak: async(event) => {
-      const url = 'http://localhost:9000/api'
+      // const url = 'http://solveadmindev.rtp.raleigh.ibm.com/solverest/service/solvecsp/testget?sample=try%20it&enchaladas=delicious'
+      const url = 'http://stingray.swg.usma.ibm.com:9000/api?verbose=true'
       const config = {
         method: 'get',
         auth: {
@@ -42,10 +43,7 @@ export default {
         }
       }
       const { data } = await axios.request(url, config)
-      alert(`Response from ${url}\n${data}`)
-      if (event) {
-        alert(event.target.tagName)
-      }
+      alert(`Response from ${url}\n${JSON.stringify(data, null, 4)}`)
     }
   }
 }

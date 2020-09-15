@@ -1,3 +1,12 @@
+/**
+ * mmccawley@us.ibm.com  2020-09-15
+ * This file needs an edit for development mode, to resolve CORS issues
+ * per https://github.com/doccano/doccano/issues/836
+ *
+ * TODO: more durable fix to use a HOSTNAME and PORT environment
+ * variable from the docker-compose file
+ */
+
 import colors from 'vuetify/es5/util/colors'
 
 export default {
@@ -30,8 +39,15 @@ export default {
     host: '0.0.0.0' // default: localhost
   },
 
+  /**
+   * mmccawley@us.ibm.com 2020-09-15
+   * if you are deploying locally, edit the below to be the origin hostname/port you will
+   * be developing on to avoid CORS.  http://localhost:8080/v1 is a typical value, but if
+   * your local machine has DNS or a name in /etc/hosts use that instead.
+   */
+
   env: {
-    baseUrl: process.env.NODE_ENV === 'production' ? '/v1' : 'http://127.0.0.1:8000/v1'
+    baseUrl: process.env.NODE_ENV === 'production' ? '/v1' : 'http://stingray.swg.usma.ibm.com:8000/v1'
   },
 
   /*
